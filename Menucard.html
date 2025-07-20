@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Menu Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #f3f4f7, #e0e5ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .menu-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      border: 2px solid #fff;
+    }
+
+    .menu-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu-header h1 {
+      font-size: 2.2rem;
+      color: #3f502c;
+      text-shadow: 1px 1px #fff;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #5e4b32;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 5px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 10px;
+      transition: 0.6s ease;
+    }
+
+    .item:hover {
+      background: rgba(156, 42, 201, 0.1);
+    }
+
+    .item-name {
+      font-weight: 500;
+      color: #2c5031;
+    }
+
+    .item-price {
+      color: #16a085;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      .menu-card {
+        padding: 20px;
+      }
+      .menu-header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-card">
+    <div class="menu-header">
+      <h1>Sunset Bay Hotel</h1>
+      <p>Menu Card</p>
+    </div>
+
+    <div class="section">
+      <h2>Starters</h2>
+      <div class="item"><span class="item-name">Tomato Basil Soup</span><span class="item-price">₹120</span></div>
+      <div class="item"><span class="item-name">Grilled Paneer Tikka</span><span class="item-price">₹180</span></div>
+      <div class="item"><span class="item-name">Crispy Corn</span><span class="item-price">₹160</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Main Course</h2>
+      <div class="item"><span class="item-name">Butter Chicken</span><span class="item-price">₹260</span></div>
+      <div class="item"><span class="item-name">Veg Biryani</span><span class="item-price">₹200</span></div>
+      <div class="item"><span class="item-name">Dal Makhani with Naan</span><span class="item-price">₹220</span></div>
+    </div>
+
+    <div class="section">
+      <h2>Desserts</h2>
+      <div class="item"><span class="item-name">Gulab Jamun</span><span class="item-price">₹90</span></div>
+      <div class="item"><span class="item-name">Chocolate Lava Cake</span><span class="item-price">₹150</span></div>
+      <div class="item"><span class="item-name">Rasmalai</span><span class="item-price">₹110</span></div>
+    </div>
+  </div>
+</body>
+</html>
